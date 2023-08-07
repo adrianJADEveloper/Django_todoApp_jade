@@ -53,9 +53,7 @@
 <div class="center-column">
   <form method="POST" action="/">
     {% csrf_token %}
-    <label for="new-task"
-      >(REMOVED FROM TODO_APP BRANCH) Enter a new task:</label
-    >
+    <label for="new-task">ENTER A NEW TO/DO TASK</label>
     {{form.title}}
     <input class="btn btn-info" type="submit" name="'Create New Task" />
   </form>
