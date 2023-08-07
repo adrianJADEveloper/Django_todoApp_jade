@@ -52,7 +52,9 @@
 
 <div class="center-column">
   <form method="POST" action="/">
-    {% csrf_token %} {{form.title}}
+    {% csrf_token %}
+    <label for="new-task">Enter a new task:</label>
+    {{form.title}}
     <input class="btn btn-info" type="submit" name="'Create New Task" />
   </form>
 
